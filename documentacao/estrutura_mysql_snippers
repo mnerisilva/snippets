@@ -1,0 +1,58 @@
+
+
+linguagem -> 				  	tipo ->							categoria -> 						sub-categoria ->						sintaxe
+
+javascript						front-end						for loop							básico									for...
+																									variações	
+																		
+																while loop							básico									while...
+																									variações
+																		
+																arrays								básico									array...
+																									variações
+
+_________________________________________________________________________________________________________________________________________________
+
+Php								back-end						
+
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________																		
+	
+
+	
+classificacao							linguagem -> 				  	categoria -> 					subcategoria ->											titulo						sintaxe
+
+front-end								javascript						framework						react													componente funcional		...
+																																								componente de classe		...
+																																				
+																										react native											componente funcional		...
+																																								componente de classe		...
+																		lib
+																		
+																		vanilla							loop													for							...
+																																								while						...
+																										
+																		ecmascript6						atribuição												let							...
+																																								const
+																																								
+																										spread e rest											spread do jeito tal			...
+																										
+																										function												arrow function				...
+																										
+																										iteracao												map()
+																										
+
+back-end								php								conexão db						PDO														gravacao					...
+																										my_sqli
+
+
+banco de dados
+												

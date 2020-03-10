@@ -1,0 +1,52 @@
+
+    
+    .lado1 {
+        padding: 1rem;
+        border: solid thin rgb(218, 213, 213);
+    }
+    .lado2 {
+        padding: 1rem;
+        border: solid thin rgb(218, 213, 213);
+        /*background-color: #000;*/
+        color: #fff;
+        height: 100vh;
+    }
+    .lado2 h4{
+        color: lightcoral;
+        margin-bottom: .4em;
+    }
+    .comentario {
+        color: #8cc08c;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    .const {
+        color: rgb(202, 130, 202);
+    }
+    .reset-p {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .tab-p-3 {
+        padding-left: 3em;
+    }
+    .tab-p-4 {
+        padding-left: 4em;
+    }
+
+    .badge-group .badge {
+        border: solid thin rgb(221, 216, 216) !important;
+        background-color: white !important;
+        color: #000 !important;
+        outline: none;
+    }
+
+    .badge-group .badge {
+        cursor: pointer !important;
+    }
+
+    .badge-group .badge-clicado {
+        color: white !important;
+        background-color: #636363 !important;
+        outline: none;
+    }
