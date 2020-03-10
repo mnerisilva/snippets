@@ -29,13 +29,14 @@
         dataType: "html",
         success: function (data) {
             var lista = JSON.parse(data);
-            $('.lado1').append('<a href=""><h4 class="all">All</h4></a>');
+            $('.lado1').append('<a href=""><h4 class="all">all</h4></a>');
             lista.map(registro => {
+                var language_class = registro.language_sni === 'git' ? 'git':'language-'+registro.language_sni;
                 //$(elemento_prism).find('code').html(registro.syntax_sni);
                 $('.lado1').append('<a href=""><h4>'+registro.title_sni+'</h4></a>');
                 $('.lado2').append('<h4>'+registro.title_sni+'</h4>');
                 Prism.highlightAll();
-                $('.lado2').append('<pre class="code"><code class="brush: js line-numbers language-js">'+registro.syntax_sni+'</code></pre><hr>');
+                $('.lado2').append('<pre class="code"><code class="brush: js line-numbers '+language_class+'">'+registro.syntax_sni+'</code></pre><hr>');
                 Prism.highlightAll();
 
                 console.log(registro.title_sni);
