@@ -24,12 +24,12 @@
     var elemento_prism = $('.code');
     $(elemento_prism).remove();
     $.ajax({
-        url: "backend/lista.php",
+        url: "backend/list.php",
         method: 'GET',
         dataType: "html",
         success: function (data) {
             var lista = JSON.parse(data);
-            $('.lado1').append('<a href=""><h4>All</h4></a>');
+            $('.lado1').append('<a href=""><h4 class="all">All</h4></a>');
             lista.map(registro => {
                 //$(elemento_prism).find('code').html(registro.syntax_sni);
                 $('.lado1').append('<a href=""><h4>'+registro.title_sni+'</h4></a>');
@@ -51,6 +51,8 @@
         error: function () {
             console("Deu erro na requisição da página!");
         }
-    });    
+    }); 
+    
+    
 
 })();

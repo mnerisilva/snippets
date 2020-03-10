@@ -4,6 +4,9 @@
         padding: 1rem;
         border: solid thin rgb(218, 213, 213);
     }
+    .lado1 a {
+        text-decoration: none;;
+    }
     .lado2 {
         padding: 1rem;
         border: solid thin rgb(218, 213, 213);
@@ -49,4 +52,11 @@
         color: white !important;
         background-color: #636363 !important;
         outline: none;
+    }
+
+
+
+
+    .all {
+        color: #c3c3c3;
     }
