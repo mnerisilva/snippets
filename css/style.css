@@ -9,6 +9,10 @@
     .form-group label {
         font-weight: 600;
     }
+    
+    .coluna-select .form-group {
+        margin-right: 15px;
+    }
 
     .lado1 {
         background-color: seashell;

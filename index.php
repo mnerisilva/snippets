@@ -37,7 +37,7 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Title:</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="exampleInputEmail1" name='title' aria-describedby="emailHelp">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Description:</label>
@@ -45,8 +45,11 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Syntax:</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>   
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name='title' rows="3"></textarea>
+                    </div>  
+                    
+                    
+                    <div class="row coluna-select">
                     <div class="form-group">
                         <label for="exampleFormControlSelect2">Classification:</label>
                             <select class="form-control">
@@ -85,6 +88,9 @@
                                 <option>5</option>
                             </select>
                     </div>
+                    </div>
+
+
                     <div class="form-group form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label" for="exampleCheck1">Check me out</label>

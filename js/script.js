@@ -49,6 +49,7 @@
                 //$(elemento_prism).find('code').html(registro.syntax_sni);
                 $('.lado2').append('<a href=""><h4>'+registro.title_sni+'</h4></a>');
                 $('.lado3').append('<h4>'+registro.title_sni+'  '+icon+'</h4>');
+                $('.lado3').append('<h5 style="color: #544e4e">'+registro.description_sni);
                 Prism.highlightAll();
                 $('.lado3').append('<pre class="code"><code class="brush: js line-numbers '+language_class+'">'+registro.syntax_sni+'</code></pre><hr>');
                 Prism.highlightAll();
