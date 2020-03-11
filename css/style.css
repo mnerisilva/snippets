@@ -23,7 +23,7 @@
         border: solid thin rgb(218, 213, 213);
     }
     .lado2 a h4, .lado3 a h4 {
-        font-size: 1.6em;       
+        font-size: 1.4em;       
     }
     .lado2 a, .lado3 a {
         text-decoration: none;
@@ -43,7 +43,7 @@
         margin-bottom: .4em;
     }
     .lado3 h5 {
-        margin-bottom: 1em;
+        font-size: 1em;
     }
     .lado3 hr {
         border-color: #f0808040;
