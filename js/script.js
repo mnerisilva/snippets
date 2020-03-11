@@ -24,15 +24,20 @@
     var elemento_prism = $('.code');
     $(elemento_prism).remove();
     $.ajax({
-        url: "backend/list.php",
+        url: "backend/conect.php",
         method: 'GET',
         dataType: "html",
         success: function (data) {
+            console.log(data);
             var lista = JSON.parse(data);
             $('.lado1').append('<a href=""><h4 class="all">all</h4></a>');
             lista.map(registro => {
                 var language_class = 'language-'+registro.language_sni;
                 var icon = registro.language_sni === 'git' ? '<i class="fab fa-git-square"></i>':'<i class="fab fa-js-square"></i>';
+                if(registro.language_sni === 'php'){
+                    icon = '<i class="fab fa-php"></i>';
+
+                }
                 //$(elemento_prism).find('code').html(registro.syntax_sni);
                 $('.lado1').append('<a href=""><h4>'+registro.title_sni+'</h4></a>');
                 $('.lado2').append('<h4>'+registro.title_sni+'  '+icon+'</h4>');
