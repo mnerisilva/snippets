@@ -22,8 +22,14 @@
         padding: 1rem;
         border: solid thin rgb(218, 213, 213);
     }
-    .lado2 a {
-        text-decoration: none;;
+    .lado2 a h4, .lado3 a h4 {
+        font-size: 1.6em;       
+    }
+    .lado2 a, .lado3 a {
+        text-decoration: none;
+        color: #f08080;
+        font-size: .8em;
+
     }
     .lado3 {
         padding: 1rem;
@@ -35,6 +41,12 @@
     .lado3 h4{
         color: lightcoral;
         margin-bottom: .4em;
+    }
+    .lado3 h5 {
+        margin-bottom: 1em;
+    }
+    .lado3 hr {
+        border-color: #f0808040;
     }
     .comentario {
         color: #8cc08c;
@@ -85,6 +97,14 @@
         width: 70%;
         margin: auto;
     }
+
+    @media (min-width: 320px) and (max-width: 667px) {/*prism.js*/
+        .code-toolbar {        
+            width: 100%;
+            font-size: .7em;
+        }        
+    }
+
 
 
     /*  summernote - escondendot grupo de botões para simplificar a barra de ferramentas   */
