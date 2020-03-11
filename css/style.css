@@ -20,7 +20,7 @@
 
     .lado2, .lado3 {
         padding: 1rem;
-        border: solid thin rgb(218, 213, 213);
+        border: solid thin rgba(255, 215, 215, 0.36);
     }
     .lado2 a h4, .lado3 a h4 {
         font-size: 1.4em;       
@@ -33,7 +33,7 @@
     }
     .lado3 {
         padding: 1rem;
-        border: solid thin rgb(218, 213, 213);
+        /*border: solid thin rgb(218, 213, 213);*/
         /*background-color: #000;*/
         color: #fff;
         height: 100vh;
