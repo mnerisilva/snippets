@@ -11,26 +11,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">    
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.css" rel="stylesheet">    
     <link rel="stylesheet" href="css/prism.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
 
+
+
+
     <div class="container-fluid">
+
+
+
+
+
         <div class="row">      
         </div>
         <div class="row">
         
-            <div class="col-md-2 col-lg-2 lado1">  
+            <div class="col-md-4 col-lg-4 lado1">
+                <h1>New Syntax</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Title:</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Description:</label>
+                        <textarea id="summernote" name="editordata"></textarea>                    
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Syntax:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>   
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect2">Classification:</label>
+                            <select class="form-control">
+                                <option>back-end</option>
+                                <option>front-end</option>
+                                <option>tools</option>
+                            </select>
+                    </div>   
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect2">Language:</label>
+                            <select class="form-control">
+                                <option>css</option>
+                                <option>git</option>
+                                <option>js</option>
+                                <option>php</option>
+                                <option>react</option>
+                            </select>
+                    </div>   
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect2">Category:</label>
+                            <select class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                    </div>   
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect2">Subcategory:</label>
+                            <select class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save new syntax</button>
+                </form>                
             </div>
 
-            <div class="col-md-10 col-lg-10 lado2">
-                        
+            <div class="col-md-2 col-lg-2 lado2"> 
+            </div>
 
-
-
+            
+            <div class="col-md-6 col-lg-6 lado3">
             </div>
         </div>
 
@@ -76,6 +143,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
     <script src="js/prism.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.min.js"></script>
+
     <script src="js/script.js"></script>
 
 

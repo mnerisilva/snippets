@@ -4,22 +4,31 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-    }    
+    } 
+    
+    .form-group label {
+        font-weight: 600;
+    }
+
     .lado1 {
+        background-color: seashell;
+    }   
+
+    .lado2, .lado3 {
         padding: 1rem;
         border: solid thin rgb(218, 213, 213);
     }
-    .lado1 a {
+    .lado2 a {
         text-decoration: none;;
     }
-    .lado2 {
+    .lado3 {
         padding: 1rem;
         border: solid thin rgb(218, 213, 213);
         /*background-color: #000;*/
         color: #fff;
         height: 100vh;
     }
-    .lado2 h4{
+    .lado3 h4{
         color: lightcoral;
         margin-bottom: .4em;
     }
@@ -64,4 +73,10 @@
 
     .all {
         color: #c3c3c3;
+    }
+
+
+    /*  summernote - escondendot grupo de botões para simplificar a barra de ferramentas   */
+    .note-table, .note-insert, .note-para {
+        display: none;
     }
