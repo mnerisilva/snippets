@@ -80,6 +80,13 @@
     }
 
 
+    /*prism.js*/
+    .code-toolbar {        
+        width: 70%;
+        margin: auto;
+    }
+
+
     /*  summernote - escondendot grupo de botões para simplificar a barra de ferramentas   */
     .note-table, .note-insert, .note-para {
         display: none;
