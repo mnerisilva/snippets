@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 4.5.1
 -- http://www.phpmyadmin.net
 --
@@ -28,11 +28,7 @@ USE `snippets`;
 -- Estrutura da tabela `category`
 --
 
-CREATE TABLE `category` (
-  `id_category` int(15) NOT NULL,
-  `descricao_category` varchar(30) NOT NULL,
-  `id_language_category` int(15) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 
 --
 -- Extraindo dados da tabela `category`

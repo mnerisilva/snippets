@@ -94,8 +94,9 @@
 
     /*prism.js*/
     .code-toolbar {        
-        width: 70%;
-        margin: auto;
+        width: 70%;       
+        width: 100%;
+        /*margin: auto;*/
     }
 
     @media (min-width: 320px) and (max-width: 667px) {/*prism.js*/
