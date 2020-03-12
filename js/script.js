@@ -1,4 +1,13 @@
 (function(){  
+
+    $('.btn-add').on('click', function(){
+        var elemento_lado1 = $('.lado1');
+        $('.lado1').remove();
+        $('.lado3').removeClass('.col-md-6');
+        $('.lado3').removeClass('.col-lg-6');
+        $('.lado3').addClass('col-md-10');
+        $('.lado3').addClass('col-lg-10');
+    })
     
     $('#summernote').summernote({
         height: 200,                 // set editor height

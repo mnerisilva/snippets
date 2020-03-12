@@ -29,7 +29,7 @@
 
 
         <div class="row" style="position: fixed; width: 100%; height: 20px; z-index: 1;"> 
-        <h5 style="text-align: right; margin-left: 30px;"><a style="cursor: pointer;"><i class="fas fa-plus-circle fa-2x"></i></a></h5>    
+        <h5 style="text-align: right; margin-left: 30px;"><a class="btn-add" style="cursor: pointer;"><i class="fas fa-plus-circle fa-2x"></i></a></h5>    
         </div>
         <div class="row content-cols">        
             <div class="col-md-4 col-lg-4 lado1">
