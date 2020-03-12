@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>::: Code Dictionary |||></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">    
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.css" rel="stylesheet">    
     <link rel="stylesheet" href="css/prism.css">
@@ -33,26 +33,26 @@
         <div class="row">
         
             <div class="col-md-4 col-lg-4 lado1">
-                <h1>New Syntax</h1>
-                <form>
+                <h2>Code Dictionary .:. Add Code</h2>
+                <form method="POST" action="backend/save.php">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Title:</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" name='title' aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="exampleInputEmail1" name='title' aria-describedby="emailHelp" required>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Description:</label>
-                        <textarea id="summernote" name="editordata"></textarea>                    
+                        <textarea id="summernote" name="description" required></textarea>                    
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Syntax:</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" name='title' rows="3"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name='syntax' rows="3" required></textarea>
                     </div>  
                     
                     
                     <div class="row coluna-select">
                     <div class="form-group">
                         <label for="exampleFormControlSelect2">Classification:</label>
-                            <select class="form-control">
+                            <select class="form-control" name="classification">
                                 <option>back-end</option>
                                 <option>front-end</option>
                                 <option>tools</option>
@@ -60,7 +60,7 @@
                     </div>   
                     <div class="form-group">
                         <label for="exampleFormControlSelect2">Language:</label>
-                            <select class="form-control">
+                            <select class="form-control" name="language">
                                 <option>css</option>
                                 <option>git</option>
                                 <option>js</option>
@@ -70,7 +70,7 @@
                     </div>   
                     <div class="form-group">
                         <label for="exampleFormControlSelect2">Category:</label>
-                            <select class="form-control">
+                            <select class="form-control" name="category">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -80,7 +80,7 @@
                     </div>   
                     <div class="form-group">
                         <label for="exampleFormControlSelect2">Subcategory:</label>
-                            <select class="form-control">
+                            <select class="form-control" name="subcategory">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -90,7 +90,7 @@
                     </div>
                     </div>
 
-
+                    <input type="hidden" value="1" name="type">
                     <button type="submit" class="btn btn-primary">Save new syntax</button>
                 </form>                
             </div>

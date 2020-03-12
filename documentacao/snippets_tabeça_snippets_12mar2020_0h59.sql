@@ -27,19 +27,6 @@ SET time_zone = "+00:00";
 --
 -- Estrutura da tabela `snippets`
 --
-
-CREATE TABLE `snippets` (
-  `id_sni` int(11) NOT NULL,
-  `title_sni` varchar(50) NOT NULL,
-  `description_sni` text NOT NULL,
-  `syntax_sni` text NOT NULL,
-  `classification_sni` int(15) NOT NULL,
-  `language_sni` varchar(30) NOT NULL,
-  `category_sni` int(15) NOT NULL,
-  `subcategory_sni` int(15) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
 -- Extraindo dados da tabela `snippets`
 --
 
@@ -59,8 +46,7 @@ INSERT INTO `snippets` (`id_sni`, `title_sni`, `description_sni`, `syntax_sni`, 
 --
 -- Indexes for table `snippets`
 --
-ALTER TABLE `snippets`
-  ADD PRIMARY KEY (`id_sni`);
+
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -69,9 +55,7 @@ ALTER TABLE `snippets`
 --
 -- AUTO_INCREMENT for table `snippets`
 --
-ALTER TABLE `snippets`
-  MODIFY `id_sni` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
-COMMIT;
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

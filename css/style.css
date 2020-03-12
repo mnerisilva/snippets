@@ -29,9 +29,11 @@
         text-decoration: none;
         color: #f08080;
         font-size: .8em;
+        font-size: 1em;
 
     }
     .lado3 {
+        overflow: auto;
         padding: 1rem;
         /*border: solid thin rgb(218, 213, 213);*/
         /*background-color: #000;*/
@@ -40,6 +42,7 @@
     }
     .lado3 h4{
         color: lightcoral;
+        margin-top: .4em;
         margin-bottom: .4em;
     }
     .lado3 h5 {
@@ -47,6 +50,7 @@
     }
     .lado3 hr {
         border-color: #f0808040;
+        margin-bottom: 8em;
     }
     .comentario {
         color: #8cc08c;

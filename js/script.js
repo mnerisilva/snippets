@@ -32,7 +32,7 @@
     var elemento_prism = $('.code');
     $(elemento_prism).remove();
     $.ajax({
-        url: "backend/conect.php",
+        url: "backend/list.php",
         method: 'GET',
         dataType: "html",
         success: function (data) {
