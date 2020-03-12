@@ -28,10 +28,10 @@
 
 
 
-        <div class="row">      
+        <div class="row" style="position: fixed; width: 100%; height: 20px; z-index: 1;"> 
+        <h5 style="text-align: right; margin-left: 30px;"><a style="cursor: pointer;"><i class="fas fa-plus-circle fa-2x"></i></a></h5>    
         </div>
-        <div class="row">
-        
+        <div class="row content-cols">        
             <div class="col-md-4 col-lg-4 lado1">
                 <h2>Code Dictionary .:. Add Code</h2>
                 <form method="POST" action="backend/save.php">

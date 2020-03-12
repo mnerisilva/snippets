@@ -16,7 +16,13 @@
 
     .lado1 {
         background-color: seashell;
-    }   
+        background-color: #f8c0c00f;
+        margin-top: 40px;
+    }
+    
+    .lado2 {
+        margin-top: 40px;
+    }
 
     .lado2, .lado3 {
         padding: 1rem;
