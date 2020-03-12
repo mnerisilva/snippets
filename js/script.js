@@ -46,7 +46,7 @@
                     icon = '<i class="fab fa-php"></i>';
                 }
                 //$(elemento_prism).find('code').html(registro.syntax_sni);
-                $('.lado2').append('<a href=""><h4>'+registro.title_sni+'  '+icon+'</h4></a>');
+                $('.lado2').append('<a href="" id="'+registro.id_sni+'"><h4>'+registro.title_sni+'  '+icon+'</h4></a>');
                     //if(index === 0){
                         $('.lado3').append('<h4 style="border-bottom: solid thin;">'+registro.title_sni+'  '+icon+'</h4>');
                         $('.lado3').append('<h5 style="color: #544e4e">'+registro.description_sni);

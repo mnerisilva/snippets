@@ -20,7 +20,7 @@
 		while($row = mysqli_fetch_array($result)){
 			$descricao = $row["title_sni"];
             $syntax = $row["syntax_sni"];
-            $arr_json[$contador] = ['id_sni' => $row["id_sni"], 'title_sni' => $row["title_sni"], 'description_sni' => $row["description_sni"], 'syntax_sni' => $row["syntax_sni"], 'classification_sni' => $row["classification_sni"], 'language_sni' => $row["language_sni"], 'category_sni' => $row["category_sni"], 'subcategory_sni' => $row["subcategory_sni"]];
+            $arr_json[$contador] = ['id_sni' => $row["id_sni"], 'title_sni' => $row["title_sni"], 'description_sni' => $row["description_sni"], 'syntax_sni' => htmlEntities($row["syntax_sni"]), 'classification_sni' => $row["classification_sni"], 'language_sni' => $row["language_sni"], 'category_sni' => $row["category_sni"], 'subcategory_sni' => $row["subcategory_sni"]];
             //echo $syntax;
             $contador++;
             //echo "Título: ".$title." Syntax: ".$syntax."br/>";
