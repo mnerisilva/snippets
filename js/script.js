@@ -9,8 +9,8 @@
         margin = parseInt(margin.replace("px",""));
         console.log('margin-left: '+margin);
         if(margin < 0){
-            $('.btn-add').removeClass('fa-plus-circle');
-            $('.btn-add').addClass('fa-times');
+            $('.btn-add').find('.svg').removeClass('fa-plus-circle');
+            $('.btn-add').find('.svg').addClass('fa-times');
             $('.lado1').css('margin-left', 0);
             $('.lado3').css(
                 {
@@ -19,8 +19,8 @@
                 }
             );            
         } else {
-            $('.btn-add').addClass('fa-plus-circle');
-            $('.btn-add').removeClass('fa-times');
+            $('.btn-add').find('.svg').addClass('fa-plus-circle');
+            $('.btn-add').find('.svg').removeClass('fa-times');
             $('.lado1').css('margin-left','-600px');
             
             $('.lado3').css(
