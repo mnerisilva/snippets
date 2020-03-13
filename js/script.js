@@ -54,6 +54,10 @@
                 if(registro.language_sni === 'php'){
                     icon = '<i class="fab fa-php"></i>';
                 }
+                
+                if(registro.language_sni === 'jsx'){
+                    icon = '<i class="fab fa-react"></i>';
+                }
                 //$(elemento_prism).find('code').html(registro.syntax_sni);
                 $('.lado2').append('<a href="" id="'+registro.id_sni+'"><h4>'+registro.title_sni+'  '+icon+'</h4></a>');
                     //if(index === 0){
@@ -79,6 +83,12 @@
         }
     }); 
     
+                                        // VERIFICAR MAIS PARA FRENTE PORQUE NÃO ESTÁ FUNCIONANDO ///
+                                        var links = $('.lado3 a');
+                                        console.log('links: ' + typeof links);
+                                        for (var i=0; i<links.length; i++) {
+                                            $(links[i]).attr('target','_blank');
+    }
     
 
 })();

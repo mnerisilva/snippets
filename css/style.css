@@ -30,6 +30,7 @@
     }
     .lado2 a h4, .lado3 a h4 {
         font-size: 1.3em;       
+        font-size: .8em;       
     }
     .lado2 a, .lado3 a {
         text-decoration: none;

@@ -1,6 +1,6 @@
 <?php    
     $servername = "localhost";
-    $database = "snippets_test";
+    $database = "snippets";
     $username = "root";
     $password = "";
     $snippets_table="snippets";

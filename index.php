@@ -33,7 +33,7 @@
         </div>
         <div class="row content-cols">        
             <div class="col-md-4 col-lg-4 lado1">
-                <h2>Code Dictionary .:. Add Code</h2>
+                <h2>Code Dictionary .:. Add Code <i class="far fa-file-code"></i></h2>
                 <form method="POST" action="backend/save.php">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Title:</label>
@@ -64,8 +64,8 @@
                                 <option>css</option>
                                 <option>git</option>
                                 <option>js</option>
+                                <option>jsx</option>
                                 <option>php</option>
-                                <option>react</option>
                             </select>
                     </div>   
                     <div class="form-group">
