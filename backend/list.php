@@ -9,8 +9,10 @@
 	# Verifique se o registro existe
 	
 	$query = "SELECT * FROM snippets ORDER BY title_sni ASC";
-	//$query = "SELECT * FROM snippets ORDER BY title_sni ASC LIMIT 0,1";
-	
+    //$query = "SELECT * FROM snippets ORDER BY title_sni ASC LIMIT 0,1";
+    
+
+     
     $result = mysqli_query($conn, $query);
 
     $arr_json = [];

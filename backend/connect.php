@@ -1,6 +1,6 @@
 <?php    
     $servername = "localhost";
-    $database = "snippets";
+    $database = "snippets_test";
     $username = "root";
     $password = "";
     $snippets_table="snippets";
@@ -10,5 +10,5 @@
     if (!$conn) {
         die("Conexão falhou: " . mysqli_connect_error());
     }
-
+    mysqli_set_charset($conn, 'utf8mb4')
 ?>
