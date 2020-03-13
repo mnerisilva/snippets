@@ -95,11 +95,11 @@
                 </form>                
             </div>
 
-            <div class="col-md-2 col-lg-2 lado2"> 
+            <div class="col-md-3 col-lg-3 lado2"> 
             </div>
 
             
-            <div class="col-md-10 col-lg-10 lado3">
+            <div class="col-md-9 col-lg-9 lado3">
             </div>
         </div>
 

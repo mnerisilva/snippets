@@ -21,7 +21,8 @@
         background-color: #f8c0c00f;
         background-color: #fff8f0;        
         padding: 1em;
-        margin-top: 40px;
+        margin-top: 40px;box-shadow: 3px 0px 6px -1px rgba(179,166,179,1);
+        border-radius: 5px 5px;
         z-index: 1;
         transition: all .3s linear;
     }

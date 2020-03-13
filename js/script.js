@@ -13,7 +13,7 @@
             $('.lado3').css(
                 {
                     'overflow' : 'hidden',
-                    'opacity' : .5
+                    'opacity' : .3
                 }
             );            
         } else {
