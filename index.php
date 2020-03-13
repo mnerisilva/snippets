@@ -32,7 +32,7 @@
         <h5 style="text-align: right; margin-left: 30px;"><a class="btn-add" style="cursor: pointer;"><i class="fas fa-plus-circle fa-2x"></i></a></h5>    
         </div>
         <div class="row content-cols">        
-            <div class="col-md-4 col-lg-4 lado1">
+            <div class="lado1">
                 <h2>Code Dictionary .:. Add Code <i class="far fa-file-code"></i></h2>
                 <form method="POST" action="backend/save.php">
                     <div class="form-group">
@@ -99,7 +99,7 @@
             </div>
 
             
-            <div class="col-md-6 col-lg-6 lado3">
+            <div class="col-md-10 col-lg-10 lado3">
             </div>
         </div>
 

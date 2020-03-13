@@ -19,8 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `snippets`
 --
-CREATE DATABASE IF NOT EXISTS `snippets` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `snippets`;
+CREATE DATABASE IF NOT EXISTS `snippets_old` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `snippets_old`;
 
 -- --------------------------------------------------------
 

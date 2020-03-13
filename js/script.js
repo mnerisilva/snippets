@@ -1,20 +1,31 @@
 (function(){  
 
     
-    var elemento_lado1 = $('.lado1');
-    $('.lado1').remove();
-    $('.lado3').removeClass('.col-md-6');
-    $('.lado3').removeClass('.col-lg-6');
-    $('.lado3').addClass('col-md-10');
-    $('.lado3').addClass('col-lg-10');
+    
+
 
     $('.btn-add').on('click', function(){
-        var elemento_lado1 = $('.lado1');
-        $('.lado1').remove();
-        $('.lado3').removeClass('.col-md-6');
-        $('.lado3').removeClass('.col-lg-6');
-        $('.lado3').addClass('col-md-10');
-        $('.lado3').addClass('col-lg-10');
+        var margin = $('.lado1').css('margin-left');
+        margin = parseInt(margin.replace("px",""));
+        console.log('margin-left: '+margin);
+        if(margin < 0){
+            $('.lado1').css('margin-left', 0);
+            $('.lado3').css(
+                {
+                    'overflow' : 'hidden',
+                    'opacity' : .5
+                }
+            );            
+        } else {
+            $('.lado1').css('margin-left','-600px');
+            
+            $('.lado3').css(
+                {
+                    'overflow' : 'auto',
+                    'opacity' : 1
+                }
+            );
+        }
     })
     
     $('#summernote').summernote({
