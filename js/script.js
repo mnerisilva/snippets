@@ -1,5 +1,13 @@
 (function(){  
 
+    
+    var elemento_lado1 = $('.lado1');
+    $('.lado1').remove();
+    $('.lado3').removeClass('.col-md-6');
+    $('.lado3').removeClass('.col-lg-6');
+    $('.lado3').addClass('col-md-10');
+    $('.lado3').addClass('col-lg-10');
+
     $('.btn-add').on('click', function(){
         var elemento_lado1 = $('.lado1');
         $('.lado1').remove();
@@ -62,7 +70,7 @@
                 $('.lado2').append('<a href="" id="'+registro.id_sni+'"><h4>'+registro.title_sni+'  '+icon+'</h4></a>');
                     //if(index === 0){
                         $('.lado3').append('<h4 style="border-bottom: solid thin;">'+registro.title_sni+'  '+icon+'</h4>');
-                        $('.lado3').append('<h5 style="color: #544e4e">'+registro.description_sni);
+                        $('.lado3').append('<h5 class="description" style="color: #544e4e">'+registro.description_sni);
                         Prism.highlightAll();
                         $('.lado3').append('<pre class="code"><code class="brush: js line-numbers '+language_class+'">'+registro.syntax_sni+'</code></pre><hr>');
                         Prism.highlightAll();
