@@ -9,6 +9,8 @@
         margin = parseInt(margin.replace("px",""));
         console.log('margin-left: '+margin);
         if(margin < 0){
+            $('.btn-add').removeClass('fa-plus-circle');
+            $('.btn-add').addClass('fa-times');
             $('.lado1').css('margin-left', 0);
             $('.lado3').css(
                 {
@@ -17,6 +19,8 @@
                 }
             );            
         } else {
+            $('.btn-add').addClass('fa-plus-circle');
+            $('.btn-add').removeClass('fa-times');
             $('.lado1').css('margin-left','-600px');
             
             $('.lado3').css(
@@ -79,13 +83,13 @@
                 }
                 //$(elemento_prism).find('code').html(registro.syntax_sni);
                 $('.lado2').append('<a href="" id="'+registro.id_sni+'" class="link-code"><h4>'+registro.title_sni+'  '+icon+'</h4></a>');
-                    //if(index === 0){
+                    if(index === 0){
                         $('.lado3').append('<h4 style="border-bottom: solid thin;">'+registro.title_sni+'  '+icon+'</h4>');
                         $('.lado3').append('<h5 class="description" style="color: #544e4e">'+registro.description_sni);
                         Prism.highlightAll();
                         $('.lado3').append('<pre class="code"><code class="brush: js line-numbers '+language_class+'">'+registro.syntax_sni+'</code></pre><hr>');
                         Prism.highlightAll();
-                    //}
+                    }
 
                 console.log(registro.title_sni);
                 //$('.lado2').append(elemento_prism);
