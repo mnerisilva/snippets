@@ -10,7 +10,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>::: Code Dictionary |||></title>
+    <!--<title>::: Code Dictionary |||></title>-->
+    <title>::: Diary Code |||></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">    
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.css" rel="stylesheet">    
     <link rel="stylesheet" href="css/prism.css">
@@ -33,7 +34,8 @@
         </div>
         <div class="row content-cols">        
             <div class="lado1">
-                <h2>Code Dictionary .:. Add Code <i class="far fa-file-code"></i></h2>
+                <!--<h2>Code Dictionary .:. Add Code <i class="far fa-file-code"></i></h2>-->
+                <h2>Diary Code .:. Add Code <i class="far fa-file-code"></i></h2>
                 <form method="POST" action="backend/save.php">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Title:</label>
