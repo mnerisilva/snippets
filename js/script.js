@@ -1,11 +1,12 @@
 (function(){  
 
     list();
-    //filter();
 
-    $('h4 a.link-code').on('click', function(e){
+    $('body').on('click', '.link-code', function(e){
         e.preventDefault();
         event.returnValue = false;
+        var id_sni = $(this).attr('id');
+        filter(id_sni);
         console.log('entrou aqui');
     });
 
@@ -113,9 +114,10 @@
         });         
     }
 
-    function filter(){
+    function filter(id){
+        console.log(typeof id);
         $.ajax({
-            url: "backend/filter.php?id_sni=34",
+            url: "backend/filter.php?id_sni="+id,
             method: 'GET',
             dataType: "html",
             success: function (data) {
@@ -123,6 +125,7 @@
                 var lista = JSON.parse(data);
                 $('.lado2').append('<a href=""><h4 class="all">all</h4></a>');
                 lista.map((registro, index) => {
+                    console.log('R-> '+registro);
                     var language_class = 'language-'+registro.language_sni;
                     var icon = registro.language_sni === 'git' ? '<i class="fab fa-git-square"></i>':'<i class="fab fa-js-square"></i>';
                     if(registro.language_sni === 'php'){
@@ -131,8 +134,9 @@
                     if(registro.language_sni === 'jsx'){
                         icon = '<i class="fab fa-react"></i>';
                     }
-                    $('.lado2').append('<a href="" id="'+registro.id_sni+'" class="link-code"><h4>'+registro.title_sni+'  '+icon+'</h4></a>');
+                    //$('.lado2').append('<a href="" id="'+registro.id_sni+'" class="link-code"><h4>'+registro.title_sni+'  '+icon+'</h4></a>');
                         //if(registro.id_sni == 29){
+                            $('.lado3').empty();
                             $('.lado3').append('<h4 style="border-bottom: solid thin;">'+registro.title_sni+'  '+icon+'</h4>');
                             $('.lado3').append('<h5 class="description" style="color: #544e4e">'+registro.description_sni);
                             Prism.highlightAll();
