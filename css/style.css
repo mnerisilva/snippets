@@ -35,11 +35,16 @@
         padding: 1rem;
         border: solid thin rgba(255, 215, 215, 0.36);
     }
-    .lado2 a h4, .lado3 a h4 {
+    .lado2 h4, .lado3 h4 {
+        padding: 2px;
         font-size: 1.3em;       
         font-size: .8em;
-        font-size: 1.5em;
+        font-size: 1.2em;
         border-bottom: solid thin #fdeaea;     
+    }
+    .lado2 h4:hover {
+        background-color: #e9adad;
+        color: #fff;
     }
     .lado2 a, .lado3 a {
         text-decoration: none;
@@ -55,6 +60,11 @@
         /*background-color: #000;*/
         color: #fff;
         height: 100vh;
+    }
+
+    .mostra-lado3 {
+        opacity: 1 !important;
+        transition: all 1s linear;
     }
     .lado3 h4{
         color: lightcoral;

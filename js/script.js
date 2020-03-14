@@ -1,13 +1,14 @@
 (function(){  
 
     list();
+    $('.lado3').css('opacity', 0);
 
     $('body').on('click', '.link-code', function(e){
         e.preventDefault();
         event.returnValue = false;
+        $('.lado3').removeClass('mostra-lado3');
         var id_sni = $(this).attr('id');
         filter(id_sni);
-        console.log('entrou aqui');
     });
 
 
@@ -21,7 +22,7 @@
             $('.lado1').css('margin-left', 0);
             $('.lado3').css(
                 {
-                    'overflow' : 'hidden',
+                    //'overflow' : 'hidden',
                     'opacity' : .3
                 }
             );            
@@ -32,7 +33,7 @@
             
             $('.lado3').css(
                 {
-                    'overflow' : 'auto',
+                    //'overflow' : 'auto',
                     'opacity' : 1
                 }
             );
@@ -79,7 +80,6 @@
                                             }*/
 
     function list(){
-
         $.ajax({
             url: "backend/list.php",
             method: 'GET',
@@ -87,7 +87,7 @@
             success: function (data) {
                 console.log(data);
                 var lista = JSON.parse(data);
-                $('.lado2').append('<a href=""><h4 class="all">all</h4></a>');
+                //$('.lado2').append('<a href=""><h4 class="all">all</h4></a>');
                 lista.map((registro, index) => {
                     var language_class = 'language-'+registro.language_sni;
                     var icon = registro.language_sni === 'git' ? '<i class="fab fa-git-square"></i>':'<i class="fab fa-js-square"></i>';
@@ -97,7 +97,7 @@
                     if(registro.language_sni === 'jsx'){
                         icon = '<i class="fab fa-react"></i>';
                     }
-                    $('.lado2').append('<h4><a href="" id="'+registro.id_sni+'" class="link-code">'+registro.title_sni+'  '+icon+'</a></h4>');
+                    $('.lado2').append('<a href="" id="'+registro.id_sni+'" class="link-code"><h4>'+registro.title_sni+'  '+icon+'</h4></a>');
                         if(index === 0){
                             $('.lado3').append('<h4 style="border-bottom: solid thin;">'+registro.title_sni+'  '+icon+'</h4>');
                             $('.lado3').append('<h5 class="description" style="color: #544e4e">'+registro.description_sni);
@@ -107,6 +107,7 @@
                        }
                 });
                 $('code').show();
+                $('.lado3').addClass('mostra-lado3');
             },
             error: function () {
                 console("Deu erro na requisição da página!");
@@ -123,7 +124,7 @@
             success: function (data) {
                 console.log(data);
                 var lista = JSON.parse(data);
-                $('.lado2').append('<a href=""><h4 class="all">all</h4></a>');
+                //$('.lado2').append('<a href=""><h4 class="all">all</h4></a>');
                 lista.map((registro, index) => {
                     console.log('R-> '+registro);
                     var language_class = 'language-'+registro.language_sni;
@@ -145,6 +146,7 @@
                        //}
                 });
                 $('code').show();
+                $('.lado3').addClass('mostra-lado3');
             },
             error: function () {
                 console("Deu erro na requisição da página!");
